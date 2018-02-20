@@ -1,0 +1,112 @@
+.base {
+    position: relative;
+
+    width: 390px;
+    height: 390px;
+
+    background: #f98000; /* Old browsers */
+    background: -moz-linear-gradient(top, #f98000 0%, #f95d00 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f98000 0%,#f95d00 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f98000 0%,#f95d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98000', endColorstr='#f95d00',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 50px; /*12.5%*/
+    border: 2px solid #f9952b;
+
+    box-shadow: 0 0 1px #f7952a;
+}
+
+.circle {
+    position: absolute;
+    left: 125px;
+    top: 65px;
+
+    background: transparent;
+
+    width: 60px;
+    height: 60px;
+    border: 40px white solid;
+    border-radius: 50%;
+}
+
+.bend{
+    position: absolute;
+    left: 5px;
+    top: -81px;
+    width: 110px;
+    height: 200px;
+
+    border-top: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 42px solid white;
+    border-radius: 100%/50%;
+}
+
+.bend::after,
+.bend::before{
+    content: '';
+    position: absolute;
+    top: 184px;
+    left: -22px;
+    z-index: 0;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background: white;
+}
+.bend::before{
+    left: 92px;
+}
+
+
+.circle-outer{
+    position: relative;
+    overflow: hidden;
+
+    top: -40px;
+    left: -71px;
+
+    width: 200px;
+    height: 200px;
+    background: transparent;
+
+    border: 1px solid transparent;
+
+    border-radius: 55%/43%;
+}
+
+.letter-k{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+
+    width: 150px;
+    height: 100px;
+
+    background: transparent;
+}
+
+.letter-k::after,
+.letter-k::before{
+    content: '';
+    position: absolute;
+    left: 87px;
+    top: -2px;
+
+
+    width: 40px;
+    height: 100px;
+
+    background: white;
+    transform: rotate(135deg);
+
+    border-radius: 50px 50px 0 0;
+}
+.letter-k::before{
+    left: 23px;
+
+    transform: rotate(-135deg);
+}
